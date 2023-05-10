@@ -2,13 +2,13 @@
   {
     "modid": "${id}",
     "name": "${name}",
-    "description": "",
+    "description": "A Forge 1.8.9 client-side mod that can either eliminate or modify the hit delay.",
     "version": "${version}",
     "mcversion": "1.8.9",
-    "url": "",
-    "updateUrl": "",
+    "url": "https://github.com/qualk/NoHitDelay",
+    "updateUrl": "https://github.com/qualk/NoHitDelay/releases",
     "authorList": [
-      "Your Name"
+      "qualk"
     ],
     "credits": "",
     "logoFile": "",

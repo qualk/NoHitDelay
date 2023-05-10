@@ -1,4 +1,4 @@
-@file:Suppress("UnstableApiUsage", "PropertyName")
+@file:Suppress("UnstableApiUsage", "PropertyName", "mapping")
 
 import cc.polyfrost.gradle.util.noServerRunConfigs
 import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
@@ -27,7 +27,7 @@ preprocess {
     vars.put("MODERN", if (project.platform.mcMinor >= 16) 1 else 0)
 }
 
-// Replaces the variables in `ExampleMod.java` to the ones specified in `gradle.properties`.
+// Replaces the variables in `NoHitDelay.java` to the ones specified in `gradle.properties`.
 blossom {
     replaceToken("@VER@", mod_version)
     replaceToken("@NAME@", mod_name)
