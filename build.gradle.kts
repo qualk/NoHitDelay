@@ -1,4 +1,4 @@
-@file:Suppress("UnstableApiUsage", "PropertyName", "mapping")
+@file:Suppress("UnstableApiUsage", "PropertyName")
 
 import cc.polyfrost.gradle.util.noServerRunConfigs
 import com.github.jengelman.gradle.plugins.shadow.tasks.ShadowJar
