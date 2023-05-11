@@ -23,10 +23,10 @@ jobs:
         with:
           fetch-depth: 10
 
-      - name: Set up Temurin 8 JDK
+      - name: Set up Temurin 17 JDK
         uses: actions/setup-java@master
         with:
-          java-version: 8
+          java-version: 17
           distribution: temurin
 
       - uses: actions/cache@v3
@@ -46,8 +46,8 @@ jobs:
       - name: Build Uber Jar
         run: ./gradlew shadowJar
 
-      - name: Build
-        run: ./gradlew build --no-daemon
+#        - name: Build
+#        run: ./gradlew build --no-daemon
         
       - name: Artifacts
         uses: qualk/upload-artifact-as-is@master
