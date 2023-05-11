@@ -46,8 +46,8 @@ jobs:
       - name: Build Uber Jar
         run: ./gradlew shadowJar
 
-#        - name: Build
-#        run: ./gradlew build --no-daemon
+      - name: Build
+        run: ./gradlew build --no-daemon
         
       - name: Artifacts
         uses: qualk/upload-artifact-as-is@master
